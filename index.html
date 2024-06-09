@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Replication</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+         <legend>Personal Information</legend>
+         <label for="fname">First name:</label<br><br>
+         <input type="text" id="fname" name="fname"><br>
+         <label for="lname">Last name:</label><br>
+         <input type="text" id="lname" name="lname"><br>
+         <label for="email">Email:</label><br>
+         <input type="email" id="email" name="email" placeholder="example@example.com"><br>
+         <label for="phone number">Phone Number:</label><br>
+         <input type="text" id="phone number" name="phone number" placeholder="+country_code 0000000000"><br>
+         <label for="birthday">Birthday:</label><br>
+         <input type="date" id="birthday" name="birthday"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="fav color">Favorite Color:</label><br>
+            <input type="text" class="pref_tag" id="fav color" name="fav color"><br>
+            <label>Preferred cantact method:</label><br>
+            <input type="radio" name="email" id="email">
+            <label for="email">Email<label><br>
+            <input type="radio" name="phone" id="phone">
+            <label for="phone">Phone<label><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="male" id="male">
+            <label for="male">Male<label><br>
+            <input type="radio" name="female" id="female">
+            <label for="phone">Female<label><br>
+            <label for="quantity">Quantity (between 1 and 5):<label><br>
+            <input type="text" id="quantity" name="quantity">                
+        </fieldset>
+
+        <fieldset>
+            <legend>CV</legend>
+            <label for="file">Upload a file:</label>
+            <input type="button" value="Choose Files">
+            <label for="file">No file chosen</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agreement</legend>
+            <label for="agreement">I agree to the terms and conditions</label>
+            <input type="checkbox" name="agree" id="agree">
+        </fieldset>
+        <button>Submit</button>
+       </form>
+</body>
+</html>
